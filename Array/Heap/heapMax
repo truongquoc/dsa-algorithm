@@ -1,0 +1,14 @@
+import heapq
+
+# heap stores (-key, value) for max heap
+max_heap = []
+
+# push elements with negative key
+heapq.heappush(max_heap, (-5, "apple"))
+heapq.heappush(max_heap, (-3, "banana"))
+heapq.heappush(max_heap, (-8, "cherry"))
+
+# pop values largest to smallest
+while max_heap:
+    neg_key, val = heapq.heappop(max_heap)
+    print(-neg_key, val)  # prints 8 cherry, 5 apple, 3 banana
