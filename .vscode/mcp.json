@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "travel-mcp": {
+      "command": "/Users/ngotruongquoc/ws/MCP/agentic/.venv/bin/python",
+      "args": ["mcp_server.py"],
+      "cwd": "/Users/ngotruongquoc/ws/MCP/agentic",
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}
